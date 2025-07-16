@@ -3,8 +3,8 @@ This project focuses on building an autonomous vehicle that can navigate a track
 🔧 Environment Simulator: gym-donkeycar 
 
 Actions:<br>
-    Steering: Continuous range from -5 to +5<br>
-    Throttle: Continuous range from 0 to 1
+&nbsp; Steering: Continuous range from -5 to +5<br>
+&nbsp; Throttle: Continuous range from 0 to 1
 
 Observations: Raw pixel images from a front-facing camera
 
