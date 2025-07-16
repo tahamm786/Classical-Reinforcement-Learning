@@ -4,9 +4,9 @@ As part of my learning process, I also implemented and experimented with FrozenL
 
 🔧 Environment Simulator: gym-donkeycar 
 
-Actions:
-       Steering: Continuous range from -5 to +5<br>
-       Throttle: Continuous range from 0 to 1
+Actions:<br>
+&nbsp;       Steering: Continuous range from -5 to +5<br>
+&nbsp;       Throttle: Continuous range from 0 to 1
 
 Observations: Raw pixel images from a front-facing camera
 Rewards: Based on lane-centering and maintaining speed
