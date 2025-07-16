@@ -14,16 +14,16 @@ Rewards: Based on lane-centering and maintaining speed
 Termination: Episode ends if the car veers off track or crashes
 
 🧠 What I Learned
-Applied Deep Reinforcement Learning to a real-world-inspired control problem.
-Processed visual input through CNNs for policy learning.
-Tuned and trained agents using reward shaping and environment feedback.
-Developed a robust control policy capable of handling dynamic driving conditions.
-Gained experience in training, evaluating, and optimizing AI models for real-time decision making.
+Applied Deep Reinforcement Learning to a real-world-inspired control problem.<br>
+Processed visual input through CNNs for policy learning.<br>
+Tuned and trained agents using reward shaping and environment feedback.<br>
+Developed a robust control policy capable of handling dynamic driving conditions.<br>
+Gained experience in training, evaluating, and optimizing AI models for real-time decision making.<br>
 
 🏁 Goal
 
 Build a self-driving agent that:
 
-Stays centered in the lane
-Maintains optimal speed
-Navigates a full lap successfully without collisions
+Stays centered in the lane<br>
+Maintains optimal speed<br>
+Navigates a full lap successfully without collisions<br>
