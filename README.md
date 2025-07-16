@@ -1,2 +1,29 @@
-# Autonomous-Car-Driving-using-Deep-RL
-ChatGPT said: Autonomous driving using Deep RL with visual inputs. Trains an agent to follow lanes using CNNs from raw pixels. Actions: steering (-5 to 5) and throttle (0 to 1). Rewards based on centering/speed. Built on gym-donkeycar. Focus on RL, CNNs, control, and real-time decision making in dynamic environments.
+This project focuses on building an autonomous vehicle that can navigate a track by following lanes using Deep Reinforcement Learning (DRL). The agent learns to control steering and throttle purely from raw camera images using Convolutional Neural Networks (CNNs) and RL techniques.
+
+🔧 Environment
+Simulator: gym-donkeycar
+
+Actions:
+    Steering: Continuous range from -5 to +5
+    Throttle: Continuous range from 0 to 1
+
+Observations: Raw pixel images from a front-facing camera
+
+Rewards: Based on lane-centering and maintaining speed
+
+Termination: Episode ends if the car veers off track or crashes
+
+🧠 What I Learned
+Applied Deep Reinforcement Learning to a real-world-inspired control problem.
+Processed visual input through CNNs for policy learning.
+Tuned and trained agents using reward shaping and environment feedback.
+Developed a robust control policy capable of handling dynamic driving conditions.
+Gained experience in training, evaluating, and optimizing AI models for real-time decision making.
+
+🏁 Goal
+
+Build a self-driving agent that:
+
+Stays centered in the lane
+Maintains optimal speed
+Navigates a full lap successfully without collisions
