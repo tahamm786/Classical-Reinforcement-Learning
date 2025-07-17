@@ -5,6 +5,13 @@ from collections import defaultdict
 from minigrid.wrappers import FullyObsWrapper
 import time
 import matplotlib.pyplot as plt
+import wandb
+
+wandb.init(project="MC", name="mc-run", config={
+    "episodes": 1000,
+    "alpha": 0.1,
+    "gamma": 0.99
+})
 
 env = gym.make("MiniGrid-Empty-6x6-v0",render_mode=None)
 
@@ -88,7 +95,15 @@ def every_visit_mc_control(env, episodes, gamma, epsilon,epsilon_min=0.001, epsi
 
         epsilon = max(epsilon_min, epsilon * epsilon_decay)
 
-        
+        wandb.log({
+
+            "Episode": ep,
+            "Reward": total_reward,
+            "Steps": len(episode),
+            "Epsilon": epsilon
+
+        })
+
         if (ep + 1) % 100 == 0:
             print(f"Episode {ep + 1}/{episodes} | Reward : {total_reward :.2f} | Steps : {len(episode)} | epsilon : {epsilon:.3f} ")
 
@@ -125,6 +140,14 @@ plt.xlabel("Episode")
 plt.ylabel("Number of Steps")
 
 plt.tight_layout()
+
+for ep in range(len(smoothed_rewards)):
+    wandb.log({
+        "Smoothed Reward": smoothed_rewards[ep],
+        "Smoothed Steps": smoothed_steps[ep],
+        "Episode (smoothed)": ep
+    })
+
 plt.show()
 
 
@@ -159,3 +182,5 @@ time.sleep(1.0)
 test_env.close()
 print(f"Episode return:, {total_reward:.2f}")
 print("No. of Steps",step)
+
+wandb.finish()

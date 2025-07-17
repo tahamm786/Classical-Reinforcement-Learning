@@ -1,0 +1,46 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            5a1rukq37levoo7xa3nd79lrtxlga1vg:
+                codePath: MiniGridEnv\minigrid_MC.py
+                codePathLocal: MiniGridEnv\minigrid_MC.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "838087704576"
+                        used: "201123401728"
+                email: tahamm3008@gmail.com
+                executable: C:\Users\HP\AppData\Local\Programs\Python\Python311\python.exe
+                git:
+                    commit: 695977f54b29f9a117034e1836a153c9d1cf804d
+                    remote: https://github.com/tahamm786/Autonomous-Car-Driving-using-Deep-RL.git
+                host: TAHA-PC
+                memory:
+                    total: "16805036032"
+                os: Windows-10-10.0.26100-SP0
+                program: c:\Users\HP\OneDrive\Desktop\SUMMER_INTERN_IVLABS\Autonomous-Car-Driving-using-Deep-RL\MiniGridEnv\minigrid_MC.py
+                python: CPython 3.11.1
+                root: C:\Users\HP\OneDrive\Desktop\SUMMER_INTERN_IVLABS\Autonomous-Car-Driving-using-Deep-RL
+                startedAt: "2025-07-17T19:05:11.665576Z"
+                writerId: 5a1rukq37levoo7xa3nd79lrtxlga1vg
+        m: []
+        python_version: 3.11.1
+        t:
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.11.1
+            "5": 0.21.0
+            "8":
+                - 3
+            "12": 0.21.0
+            "13": windows-amd64
+alpha:
+    value: 0.1
+episodes:
+    value: 1000
+gamma:
+    value: 0.99
