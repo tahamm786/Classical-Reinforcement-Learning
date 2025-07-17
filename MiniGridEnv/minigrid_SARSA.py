@@ -7,7 +7,7 @@ import time
 import matplotlib.pyplot as plt
 import wandb
 
-wandb.init(project="Q_LEARNING", name="q-run", config={
+wandb.init(project="SARSA", name="sarsa", config={
     "episodes": 1000,
     "alpha": 0.1,
     "gamma": 0.95
