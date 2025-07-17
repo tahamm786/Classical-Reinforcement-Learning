@@ -5,6 +5,13 @@ from collections import defaultdict
 from minigrid.wrappers import FullyObsWrapper
 import time
 import matplotlib.pyplot as plt
+import wandb
+
+wandb.init(project="MC_ALPHA", name="mc_alpha", config={
+    "episodes": 1000,
+    "alpha": 0.1,
+    "gamma": 0.95
+})
 
 env = gym.make("MiniGrid-Empty-6x6-v0",render_mode=None)
 
@@ -83,6 +90,14 @@ def every_visit_mc_control(env, episodes, gamma,alpha, epsilon,epsilon_min=0.001
 
         epsilon = max(epsilon_min, epsilon * epsilon_decay)
 
+        wandb.log({
+
+            "Episode": ep,
+            "Reward": total_reward,
+            "Steps": len(episode),
+            "Epsilon": epsilon
+
+        })
        
         if (ep + 1) % 100 == 0:
             print(f"Episode {ep + 1}/{episodes} | Reward : {total_reward :.2f} | Steps : {len(episode)} | epsilon : {epsilon:.3f} ")
@@ -122,7 +137,12 @@ plt.ylabel("Number of Steps")
 plt.tight_layout()
 plt.show()
 
-
+for ep in range(len(smoothed_rewards)):
+    wandb.log({
+        "Smoothed Reward": smoothed_rewards[ep],
+        "Smoothed Steps": smoothed_steps[ep],
+        "Episode (smoothed)": ep
+    })
 
 test_env = gym.make("MiniGrid-Empty-6x6-v0", render_mode="human", max_steps=100)
 
