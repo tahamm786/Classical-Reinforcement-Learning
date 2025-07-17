@@ -140,6 +140,7 @@ plt.xlabel("Episode")
 plt.ylabel("Number of Steps")
 
 plt.tight_layout()
+plt.show()
 
 for ep in range(len(smoothed_rewards)):
     wandb.log({
@@ -147,8 +148,6 @@ for ep in range(len(smoothed_rewards)):
         "Smoothed Steps": smoothed_steps[ep],
         "Episode (smoothed)": ep
     })
-
-plt.show()
 
 
 

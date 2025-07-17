@@ -1,0 +1,45 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            qz6wamwkcw3d45qfwsn4ialppd5tn96z:
+                codePath: MiniGridEnv\minigrid_SARSA.py
+                codePathLocal: MiniGridEnv\minigrid_SARSA.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "838087704576"
+                        used: "201139216384"
+                email: tahamm3008@gmail.com
+                executable: C:\Users\HP\AppData\Local\Programs\Python\Python311\python.exe
+                git:
+                    commit: ec235b01b5ba75af28a94adb8966abd3dda43a08
+                    remote: https://github.com/tahamm786/Autonomous-Car-Driving-using-Deep-RL.git
+                host: TAHA-PC
+                memory:
+                    total: "16805036032"
+                os: Windows-10-10.0.26100-SP0
+                program: c:\Users\HP\OneDrive\Desktop\SUMMER_INTERN_IVLABS\Autonomous-Car-Driving-using-Deep-RL\MiniGridEnv\minigrid_SARSA.py
+                python: CPython 3.11.1
+                root: C:\Users\HP\OneDrive\Desktop\SUMMER_INTERN_IVLABS\Autonomous-Car-Driving-using-Deep-RL
+                startedAt: "2025-07-17T19:39:43.029376Z"
+                writerId: qz6wamwkcw3d45qfwsn4ialppd5tn96z
+        m: []
+        python_version: 3.11.1
+        t:
+            "3":
+                - 13
+                - 16
+            "4": 3.11.1
+            "5": 0.21.0
+            "8":
+                - 3
+            "12": 0.21.0
+            "13": windows-amd64
+alpha:
+    value: 0.1
+episodes:
+    value: 1000
+gamma:
+    value: 0.95

@@ -5,6 +5,14 @@ from collections import defaultdict
 from minigrid.wrappers import FullyObsWrapper
 import time
 import matplotlib.pyplot as plt
+import wandb
+
+wandb.init(project="Q_LEARNING", name="q-run", config={
+    "episodes": 1000,
+    "alpha": 0.1,
+    "gamma": 0.95
+})
+
 
 
 env = gym.make("MiniGrid-Empty-6x6-v0",render_mode=None)
@@ -69,6 +77,15 @@ def sarsa_lambda_train(env, Q, E, episodes, alpha, gamma, lam, n_actions):
         steps.append(count)
         epsilon = max(epsilon_min, epsilon * epsilon_decay)
 
+        wandb.log({
+
+            "Episode": ep,
+            "Reward": total_reward,
+            "Steps": count,
+            "Epsilon": epsilon
+
+        })
+
         if (ep + 1) % 100 == 0:
             print(f"Episode {ep+1}/{episodes} | Reward: {total_reward:.2f} | Steps: {count} | epsilon: {epsilon:.3f}")
 
@@ -103,6 +120,13 @@ plt.title("Steps per Episode - SARSA LAMBDA")
 
 plt.tight_layout()
 plt.show()
+
+for ep in range(len(smoothed_rewards)):
+    wandb.log({
+        "Smoothed Reward": smoothed_rewards[ep],
+        "Smoothed Steps": smoothed_steps[ep],
+        "Episode (smoothed)": ep
+    })
 
 policy = {}
 
