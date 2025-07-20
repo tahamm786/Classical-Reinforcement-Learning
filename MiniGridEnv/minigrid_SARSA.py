@@ -2,7 +2,7 @@ import gymnasium as gym
 import numpy as np
 import random
 from collections import defaultdict
-from minigrid.wrappers import FullyObsWrapper
+import minigrid
 import time
 import matplotlib.pyplot as plt
 import wandb
