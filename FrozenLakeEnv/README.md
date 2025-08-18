@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/Media/frozen_lake.gif" width="500">
+  <img src="FrozenLakeEnv\Media\frozen_lake.gif" width="500">
 </p>
 
 # Frozen Lake Environment

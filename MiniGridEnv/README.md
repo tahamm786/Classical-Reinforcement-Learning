@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/Media/EmptyEnv.gif" width="500">
+  <img src="MiniGridEnv\Media\EmptyEnv.gif" width="500">
 </p>
 
 # MiniGrid Empty Environment
