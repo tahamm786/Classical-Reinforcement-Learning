@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="FrozenLakeEnv/Media/frozen_lake.gif" width="500">
+  <img src="https://raw.githubusercontent.com/tahamm786/Autonomous-Car-Driving-using-Deep-RL/main/FrozenLakeEnv/Media/frozen_lake.gif" width="500">
 </p>
 
 # Frozen Lake Environment

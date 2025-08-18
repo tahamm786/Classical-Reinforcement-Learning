@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="MiniGridEnv/Media/EmptyEnv.gif" width="500">
+  <img src="https://github.com/tahamm786/Autonomous-Car-Driving-using-Deep-RL/blob/main/MiniGridEnv/Media/EmptyEnv.gif" width="500">
 </p>
 
 # MiniGrid Empty Environment
