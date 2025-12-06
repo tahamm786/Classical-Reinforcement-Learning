@@ -1,4 +1,4 @@
-(https://github.com/tahamm786/Classical-Reinforcement-Learning/blob/main/FrozenLakeEnv/Media/frozen_lake.gif)
+![FrozenLake Demo](https://raw.githubusercontent.com/tahamm786/Classical-Reinforcement-Learning/main/FrozenLakeEnv/Media/frozen_lake.gif)
 
 # Frozen Lake Environment
 
