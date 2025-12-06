@@ -1,4 +1,4 @@
-![Minigrid Demo](https://raw.githubusercontent.com/tahamm786/Classical-Reinforcement-Learning/blob/main/MiniGridEnv/Media/EmptyEnv.gif)
+![MiniGrid EmptyEnv](https://raw.githubusercontent.com/tahamm786/Classical-Reinforcement-Learning/main/MiniGridEnv/Media/EmptyEnv.gif)
 
 # MiniGrid Empty Environment
 
