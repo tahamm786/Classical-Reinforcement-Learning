@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/tahamm786/Autonomous-Car-Driving-using-Deep-RL/main/FrozenLakeEnv/Media/frozen_lake.gif" width="500">
-</p>
+(https://github.com/tahamm786/Classical-Reinforcement-Learning/blob/main/FrozenLakeEnv/Media/frozen_lake.gif)
 
 # Frozen Lake Environment
 
