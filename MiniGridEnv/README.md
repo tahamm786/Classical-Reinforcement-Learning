@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://github.com/tahamm786/Autonomous-Car-Driving-using-Deep-RL/blob/main/MiniGridEnv/Media/EmptyEnv.gif" width="500">
-</p>
+![Minigrid Demo](https://raw.githubusercontent.com/tahamm786/Classical-Reinforcement-Learning/blob/main/MiniGridEnv/Media/EmptyEnv.gif)
 
 # MiniGrid Empty Environment
 
