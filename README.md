@@ -1,3 +1,6 @@
+![RL Diagram](https://raw.githubusercontent.com/tahamm786/Classical-Reinforcement-Learning/main/RL.jpg)
+
+
 #  Classical Reinforcement Learning 
 A collection of foundational RL implementations completed while preparing for a larger DRL-based autonomous driving project.
 
